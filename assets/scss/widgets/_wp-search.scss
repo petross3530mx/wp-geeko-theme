@@ -1,0 +1,41 @@
+
+.searchform {
+	position: relative;
+
+	input[type="text"] {
+		width: 100%;
+    
+    @if $rtl {
+      padding-left: 100px; // when RTL is on
+    } @else {
+      padding-right: 100px; // when RTL is off
+    }
+
+	}
+
+	input[type="submit"] {
+    position: absolute;
+    
+    @if $rtl {
+      left: 3px;
+    } @else {
+      right: 3px;
+    }
+
+		bottom: 3px;
+		padding: var(--PADD);
+		font-size: 100%;
+		line-height: 1;
+		background-color: var(--GC-COLOR--PRIMARY);
+		border: none;
+    border-radius: var(--BORDER-RADIUS--MD);
+    color: var(--GC-COLOR--TEXT--INVERT);
+		cursor: pointer;
+    transition: background-color .2s ease;
+    z-index: 1;
+
+		&:hover {
+			background-color: var(--GC-COLOR--PRIMARY--DARK);
+		}
+	}
+}

@@ -1,0 +1,25 @@
+.gc-widget.widget_recent_comments {
+  ul {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0;
+
+    li {
+      margin-bottom: var(--PADD);
+      padding-bottom: var(--PADD);
+      list-style-type: none;
+      font-size: 80%;
+      border-bottom: 1px solid var(--DIVIDER--LIGHT);
+
+      > a {
+        font-weight: bold;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+      }
+    }
+  }
+}

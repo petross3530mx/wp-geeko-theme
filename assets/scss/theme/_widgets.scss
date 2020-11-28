@@ -1,0 +1,59 @@
+.gc-widgets {
+  padding-top: var(--PADD--MD);
+  padding-bottom: var(--PADD--MD);
+
+  @include mq($from: desktop) {
+    padding-top: var(--grid-gap);
+    padding-bottom: var(--grid-gap);
+  }
+}
+
+.gc-widgets--top {
+  --visibility: var(--c-gc-widgets-top-vis);
+  --visibility--mobile: var(--c-gc-widgets-top-vis-mobile);
+
+  display: var(--visibility--mobile);
+  padding-bottom: 0;
+
+  @include mq($from: desktop) {
+    display: var(--visibility);
+  }
+}
+
+.gc-widgets--bottom {
+  --visibility: var(--c-gc-widgets-bottom-vis);
+  --visibility--mobile: var(--c-gc-widgets-bottom-vis-mobile);
+
+  display: var(--visibility--mobile);
+  padding-top: 0;
+
+  @include mq($from: desktop) {
+    display: var(--visibility);
+  }
+}
+
+.gc-widgets__inner {
+  @extend %container;
+
+  @include mq($until: desktop) {
+    .peepso-sts & {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+.gc-widgets__grid {
+  @include mq($from: desktop) {
+    display: grid;
+    grid-gap: var(--PADD--XL);
+
+    .gc-widgets--top & {
+      grid-template-columns: repeat(var(--c-gc-widgets-top-col), 1fr);
+    }
+
+    .gc-widgets--bottom & {
+      grid-template-columns: repeat(var(--c-gc-widgets-bottom-col), 1fr);
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.gc-widget.widget_calendar {
+  padding-left: 0;
+  padding-right: 0;
+
+  .gc-widget__title {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  table {
+    font-size: 80%;
+    text-align: center;
+
+    th,
+    td {
+      padding: var(--PADD);
+    }
+
+    caption {
+      padding: var(--PADD);
+    }
+
+    #today {
+      font-weight: bold;
+      color: var(--PS-COLOR--PRIMARY--LIGHT);
+      box-shadow: inset 0 0 0 2px var(--PS-COLOR--PRIMARY--LIGHT);
+    }
+  }
+
+  .wp-calendar-nav {
+    padding-left: var(--PADD--MD);
+    padding-right: var(--PADD--MD);
+    font-size: 80%;
+  }
+}

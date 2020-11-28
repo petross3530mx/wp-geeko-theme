@@ -1,0 +1,76 @@
+$rtl: false;
+
+@import 'vars';
+
+// RTL SETTINGS
+$rtl: false;
+
+// GLOBAL VARIABLES
+:root {
+	--PADD--XS: calc(var(--PADD) / 4);
+	--PADD--SM: calc(var(--PADD) / 2);
+	--PADD: 10px;
+	--PADD--MD: calc(var(--PADD) * 2);
+	--PADD--XL: calc(var(--PADD) * 3);
+
+	--CONTAINER: 1280px;
+
+	--DIVIDER: rgba(70, 77, 87, 0.15);
+	--DIVIDER--LIGHT: rgba(70, 77, 87, 0.1);
+	--DIVIDER--LIGHTEN: rgba(70, 77, 87, 0.05);
+	--DIVIDER--DARK: rgba(70, 77, 87, 0.25);
+	--DIVIDER--R: rgba(255, 255, 255, 0.1);
+	--DIVIDER--R--LIGHT: rgba(255, 255, 255, 0.05);
+
+	--FONT-SIZE: 18px;
+	--LINE-HEIGHT: 1.4;
+
+	--COLOR--PRIMARY: #0075ff;
+	--COLOR--PRIMARY--SHADE: #b3e5fc;
+  --COLOR--PRIMARY--LIGHT: #55b9ff;
+	--COLOR--PRIMARY--ULTRALIGHT: #def5ff;
+  --COLOR--PRIMARY--DARK: #1b64dd;
+
+	--COLOR--SUCCESS: #66BB6A;
+	--COLOR--SUCCESS--LIGHT: #C8E6C9;
+	--COLOR--SUCCESS--DARK: #4CAF50;
+	--COLOR--WARNING: #FFA726;
+	--COLOR--WARNING--LIGHT: #FFE0B2;
+	--COLOR--WARNING--DARK: #F57C00;
+	--COLOR--ABORT: #E53935;
+	--COLOR--ABORT--LIGHT: #FFCDD2;
+	--COLOR--ABORT--DARK: #D32F2F;
+
+  --COLOR--ALT: #f27e3f;
+	--COLOR--ONLINE: #74e4a2;
+
+  --COLOR--APP: #fff;
+  --COLOR--APP--GRAY: #f7f7f7;
+	--COLOR--APP--DARKGRAY: #eee;
+	--COLOR--APP--DARK: #46494f;
+	--COLOR--APP--DARKER: #202124;
+
+	--COLOR--HEADING: #333;
+  --COLOR--TEXT: #494954;
+  --COLOR--TEXT--LIGHT: #91919d;
+	--COLOR--TEXT--LIGHTEN: #b0b0b9;
+
+	--BORDER-RADIUS--SM: calc(var(--BORDER-RADIUS) / 2);
+	--BORDER-RADIUS: 4px;
+	--BORDER-RADIUS--MD: calc(var(--BORDER-RADIUS) + (var(--BORDER-RADIUS) / 2));
+	--BORDER-RADIUS--XL: calc(var(--BORDER-RADIUS) * 2);
+	--BORDER-RADIUS--AVATAR: 100%;
+
+	--BOX-SHADOW--HARD: 0 0 0 1px rgba(70, 77, 87, 0.05);
+	--BOX-SHADOW: 0 1px 2px rgba(70, 77, 87, 0.08);
+	--BOX-SHADOW--MD: 0 0 20px rgba(70, 77, 87, 0.15);
+	--BOX-SHADOW--XL: 0 20px 30px rgba(70, 77, 87, 0.1);
+
+	--INPUT-SHADOW: #55b9ff80;
+	--INPUT-SHADOW--IN: var(--COLOR--PRIMARY--LIGHT);
+}
+
+
+
+@import 'new-vars';
+@import 'theme';

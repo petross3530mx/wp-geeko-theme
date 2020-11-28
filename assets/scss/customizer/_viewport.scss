@@ -1,0 +1,44 @@
+.gca-customizer__viewport {
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	width: 100%;
+	box-shadow: 0 -1px 0 var(--divider--light);
+}
+
+.gca-customizer__viewport-item {
+	flex-grow: 1;
+	margin: 0;
+	padding: var(--padd--md) var(--padd);
+	font-size: 110%;
+	color: var(--color--text--light);
+	background: var(--color--app);
+	background: -webkit-linear-gradient(bottom, var(--color--app--darkgray) 0%, var(--color--app) 100%);
+	background: -o-linear-gradient(bottom, var(--color--app--darkgray) 0%, var(--color--app) 100%);
+	background: linear-gradient(to top, var(--color--app--darkgray) 0%, var(--color--app) 100%);
+	border: none;
+	border-right: 1px solid var(--divider--light);
+	outline: none;
+	cursor: pointer;
+
+	&:last-child {
+		border: none;
+	}
+
+	&.active {
+		color: var(--color--primary);
+
+		&:hover,
+		&:focus {
+			color: var(--color--primary);
+		}
+	}
+
+	&:hover,
+	&:focus {
+		color: var(--color--text);
+	}
+}
