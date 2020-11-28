@@ -125,3 +125,12 @@ jQuery(".popclose").on("click", function(){
     jQuery(this).addClass("btn-loading");
     jQuery(this).parent().parent().find(".acf-form-submit").children("input").trigger("click");
   });
+
+  jQuery('#pop-inner input').on("keyup", function(){
+    jQuery('#pop-inner .btnbtx').addClass("btn-blue");
+  })
+
+
+  jQuery('#pop-inner select').on("change", function(){
+    jQuery('#pop-inner .btnbtx').addClass("btn-blue");
+  })

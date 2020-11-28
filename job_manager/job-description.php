@@ -34,9 +34,9 @@ function edit_detail($detail){
 					'groups' => 'job-options',
                     'fields' => array('type', 'location', 'salary_r1', 'salary_r2' , 'fee', 'flat_range', 'job_description', 'must_have', 'bonus_points', 'agreement', 'jobs_logo'),
                     ); ?>
-			<div><button class="btn btn-blue btn-rounded mr10 btnbtx acf-description-form-submit">Save</button></div>
+			<div><button class="btn btn-rounded mr10 btnbtx acf-description-form-submit">Save</button></div>
 			<?php acf_form($options); ?>
-			<div><button class="btn btn-blue btn-rounded mr10 btnbtx acf-description-form-submit">Save</button></div>
+			<div><button class="btn btn-rounded mr10 btnbtx acf-description-form-submit">Save</button></div>
 			<span class="popclose">X</span>
 			</div>
 			</div>
