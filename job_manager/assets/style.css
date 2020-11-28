@@ -684,17 +684,19 @@ grid-area: select;
   position: absolute
 }
 
-.btn-loading:after {
-  animation: fontbulger 2s infinite;
+.job-left .jt.name-char{
+  display: table-cell;
+  text-align: center;
+  line-height: 66px;
+  vertical-align: middle;
+  font-size: 21px;
+  background: #fff;
+  color: #21a2ff;
 }
-
-@keyframes fontbulger {
-  0% {
-    transform: rotate(0deg);
-  30% {
-    transform: rotate(90deg);
-  }
-  100% {
-    transform: rotate(180deg);
-  }
+.jt.job-imgx img {
+  max-width: 100%;
+  height: 66px;
+  object-fit: cover;
+  vertical-align: middle;
+  background: #fff;
 }
