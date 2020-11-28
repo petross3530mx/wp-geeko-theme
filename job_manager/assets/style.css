@@ -703,3 +703,7 @@ grid-area: select;
 .btnbtx{
   transition: all 0.4s ease;
 }
+
+.job-left .acf-form-submit{
+  display: none;
+}

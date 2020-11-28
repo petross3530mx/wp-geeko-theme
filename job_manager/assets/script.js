@@ -128,9 +128,14 @@ jQuery(".popclose").on("click", function(){
 
   jQuery('#pop-inner input').on("keyup", function(){
     jQuery('#pop-inner .btnbtx').addClass("btn-blue");
-  })
+  });
 
 
   jQuery('#pop-inner select').on("change", function(){
     jQuery('#pop-inner .btnbtx').addClass("btn-blue");
-  })
+  });
+
+  jQuery('.job-left .acf-form .acf-fields').on('click', function(e){
+    e.stopPropagation() 
+    jQuery('.job-left .acf-form .acf-form-submit .button').trigger("click");   
+  });
